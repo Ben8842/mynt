@@ -239,6 +239,7 @@ ul {
     width: 100%;
     overflow-x: hidden;
     z-index: -2;
+    top: 500px;
   }
 
   .primary {
