@@ -4,6 +4,7 @@ import Background from "./img/MYNTone.jpeg";
 import Backgroundtwo from "./img/MYNTtwo.jpeg";
 import logomynt from "./img/logoM.PNG";
 import { Link } from "react-scroll";
+import Matching from "./components/match.js";
 
 class App extends Component {
   constructor(props) {
@@ -92,6 +93,7 @@ class App extends Component {
       <div>
         PAYMYNT provides consumers with a better way to Shop, Earn, Spend and
         Invest.
+        <Matching />
       </div>
     );
 
@@ -128,6 +130,13 @@ class App extends Component {
         <div>Invest the Cash, Spend the Crypto</div>
         <div>Make Rewards Better</div>
         <div>Your Rewards, Your Choice</div>
+      </div>
+    );
+
+    const game = (
+      <div>
+        <Matching />
+        Mynt
       </div>
     );
 
