@@ -6,6 +6,16 @@ h6 {
   color: white;
 }
 
+.header {
+  background-color: rgb(77, 77, 168);
+  color: white;
+}
+
+.headerlink {
+  color: white;
+  font-size: 14px;
+}
+
 .searchbanner {
   height: 2000px;
   width: 100%;

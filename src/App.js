@@ -49,17 +49,42 @@ class App extends Component {
           <div className="right">
             <div className="rightlink">
               {" "}
-              <Link className="headerlink" to="about" spy={false} smooth={true}>
-                About
+              <Link
+                className="headerlink"
+                to="welcome"
+                spy={false}
+                smooth={true}
+              >
+                Welcome
               </Link>
             </div>
-            <div className="rightlink">EVENTS</div>
-            <div className="rightlink">BOARDS & COMMITTEES</div>
+            <div className="rightlink">
+              {" "}
+              <Link
+                className="headerlink"
+                to="product"
+                spy={false}
+                smooth={true}
+              >
+                Product
+              </Link>
+            </div>
+            <div className="rightlink">
+              <Link
+                className="headerlink"
+                to="footer"
+                spy={false}
+                smooth={true}
+              >
+                footer
+              </Link>
+            </div>
           </div>
         </div>
         {this.state.menu ? menuextended : null}
 
         <div
+          id="product"
           className="searchbanner"
           style={{
             backgroundImage: `url(${Background})`,
@@ -71,6 +96,7 @@ class App extends Component {
           <h6>testing</h6>
         </div>
         <div
+          id="welcome"
           className="searchbanner"
           style={{
             backgroundImage: `url(${Backgroundtwo})`,
@@ -82,7 +108,7 @@ class App extends Component {
           <h6>testing</h6>
         </div>
 
-        <div className="mainlinks">
+        <div className="mainlinks" id="footer">
           <h3>FOOTER test</h3>
         </div>
         <div className="footer">
