@@ -48,7 +48,6 @@ class App extends Component {
           <div className="left"></div>
           <div className="right">
             <div className="rightlink">
-              {" "}
               <Link
                 className="headerlink"
                 to="welcome"
@@ -59,7 +58,6 @@ class App extends Component {
               </Link>
             </div>
             <div className="rightlink">
-              {" "}
               <Link
                 className="headerlink"
                 to="product"

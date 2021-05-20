@@ -7,8 +7,10 @@ h6 {
 }
 
 .header {
-  background-color: rgb(77, 77, 168);
+  background-color: #0275b6;
   color: white;
+  position: fixed;
+  width: 100%;
 }
 
 .headerlink {
@@ -99,7 +101,8 @@ h6 {
   text-align: right;
   display: inline-block;
   width: 50%;
-  height: 50px;
+  height: 100%;
+  padding: 20px;
 }
 
 .searching {
