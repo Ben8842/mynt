@@ -45,7 +45,22 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <div className="left"></div>
+          Invest the Cash, Spend the Crypto
+          <div className="left">
+            {" "}
+            <div
+              id="logomynt"
+              className="searchbanner"
+              style={{
+                backgroundImage: `url(${logomynt})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
+              <h6>testing</h6>
+            </div>
+          </div>
           <div className="right">
             <div className="rightlink">
               <Link
