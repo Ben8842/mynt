@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Background from "./img/MYNTone.jpeg";
+import Backgroundtwo from "./img/MYNTtwo.jpeg";
 import logomynt from "./img/logoM.PNG";
 
 class App extends Component {
@@ -61,10 +62,18 @@ class App extends Component {
             backgroundSize: "cover",
           }}
         >
-          <h6>
-            Providing independent research, analysis and resources to facilitate
-            informed policy decisions and administration of services
-          </h6>
+          <h6>testing</h6>
+        </div>
+        <div
+          className="searchbanner"
+          style={{
+            backgroundImage: `url(${Backgroundtwo})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <h6>testing</h6>
         </div>
 
         <div className="mainlinks">
