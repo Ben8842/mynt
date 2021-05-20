@@ -91,6 +91,11 @@ h6 {
   text-align: right;
 }
 
+.centerthetop {
+  text-align: center;
+  padding: 10px;
+}
+
 .title {
   height: 50px;
   width: 250px;
@@ -256,7 +261,7 @@ ul {
 
   .footer {
     color: white;
-    background-color: #225089;
+    background-color: #0275b6;
     height: 400px;
     width: 100%;
     overflow-x: hidden;
@@ -309,9 +314,9 @@ ul {
     width: 60%;
   }
   .right {
-    text-align: right;
+    text-align: center;
     display: inline-block;
-    width: 40%;
+    width: 80%;
     height: 30px;
   }
 

@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          Invest the Cash, Spend the Crypto
+          <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
           <div className="left">
             {" "}
             <div
@@ -105,9 +105,7 @@ class App extends Component {
             backgroundPosition: "center",
             backgroundSize: "cover",
           }}
-        >
-          <h6>testing</h6>
-        </div>
+        ></div>
         <div
           id="welcome"
           className="searchbanner"
