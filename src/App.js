@@ -10,6 +10,11 @@ class App extends Component {
     super(props);
     this.state = {
       menu: false,
+      who: false,
+      what: false,
+      why: false,
+      how: false,
+      motto: false,
     };
   }
 
@@ -23,11 +28,59 @@ class App extends Component {
     console.log(this.state.menu);
   }
 
-  toggleContent() {
+  toggleContent(id) {
     console.log("hello toggle");
+    console.log(id);
+    if (id === 1) {
+      this.setState({
+        menu: true,
+        who: true,
+        what: false,
+        why: false,
+        how: false,
+        motto: false,
+      });
+    } else if (id === 2) {
+      this.setState({
+        menu: true,
+        who: false,
+        what: true,
+        why: false,
+        how: false,
+        motto: false,
+      });
+    } else if (id === 3) {
+      this.setState({
+        menu: true,
+        who: false,
+        what: false,
+        why: true,
+        how: false,
+        motto: false,
+      });
+    } else if (id === 4) {
+      this.setState({
+        menu: true,
+        who: false,
+        what: false,
+        why: false,
+        how: true,
+        motto: false,
+      });
+    } else if (id === 5) {
+      this.setState({
+        menu: true,
+        who: false,
+        what: false,
+        why: false,
+        how: false,
+        motto: true,
+      });
+    }
   }
 
   render() {
+    var { menu, who, what, why, how, motto } = this.state;
     const whoWeAre = (
       <div>
         PAYMYNT is a movile commerce and fintech company based in greater
@@ -70,7 +123,7 @@ class App extends Component {
       </div>
     );
 
-    const motto = (
+    const mottoM = (
       <div>
         <div>Invest the Cash, Spend the Crypto</div>
         <div>Make Rewards Better</div>
@@ -81,18 +134,32 @@ class App extends Component {
     const menuextended = (
       <div className="header">
         <div className="left">
-          <button onClick={() => this.togglemenu()}>menu</button>
-          <button>Who We Are</button>
-          <button> What We Do</button>
-          <button> Why We Do</button>
-          <button>How We Do It</button>
-          <button>Our Motto</button>
+          <button id="1" onClick={(e) => this.togglemenu()}>
+            menu
+          </button>
+          <button id="2" onClick={() => this.toggleContent(1)}>
+            Who We Are
+          </button>
+          <button id="3" onClick={() => this.toggleContent(2)}>
+            {" "}
+            What We Do
+          </button>
+          <button id="4" onClick={() => this.toggleContent(3)}>
+            {" "}
+            Why We Do
+          </button>
+          <button id="5" onClick={() => this.toggleContent(4)}>
+            How We Do It
+          </button>
+          <button id="6" onClick={() => this.toggleContent(5)}>
+            Our Motto
+          </button>
         </div>
-        <div className="right">
-          <div>Invest the Cash, Spend the Crypto</div>
-          <div>Make Rewards Better</div>
-          <div>Your Rewards, Your Choice</div>
-        </div>
+        {who ? whoWeAre : null}
+        {what ? whatWeDo : null}
+        {why ? whyWeDo : null}
+        {how ? howWeDo : null}
+        {motto ? mottoM : null}
       </div>
     );
 
