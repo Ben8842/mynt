@@ -27,17 +27,16 @@ class App extends Component {
     const menuextended = (
       <div className="header">
         <div className="left">
-          <div> Home</div>
-          <div>News & Events</div>
-          <div> About Us</div>
-          <div>Contact Us</div>
-          <div>Boards & Committees</div>
+          <button onClick={() => this.togglemenu()}>menu</button>
+          <button>Who We Are</button>
+          <button> What We Do</button>
+          <button>How We Do It</button>
+          <button>Boards & Committees</button>
         </div>
         <div className="right">
-          <div>DATA & RESEARCH</div>
-          <div>LEGISLATIVE FISCAL IMPACTS</div>
-          <div>GEOGRAPHY & MAPPING</div>
-          <div>PROGRAMS & SERVICES</div>
+          <div>Invest the Cash, Spend the Crypto</div>
+          <div>Make Rewards Better</div>
+          <div>Your Rewards, Your Choice</div>
         </div>
       </div>
     );
@@ -46,8 +45,8 @@ class App extends Component {
       <div className="App">
         <div className="header">
           <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
+
           <div className="left">
-            {" "}
             <div
               id="logomynt"
               className="searchbanner"
@@ -57,12 +56,11 @@ class App extends Component {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
               }}
-            >
-              <h6>testing</h6>
-            </div>
+            ></div>
           </div>
           <div className="right">
             <div className="rightlink">
+              <button onClick={() => this.togglemenu()}>menu</button>
               <Link
                 className="headerlink"
                 to="welcome"
