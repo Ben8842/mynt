@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Background from "./img/MYNTone.jpeg";
 import Backgroundtwo from "./img/MYNTtwo.jpeg";
 import logomynt from "./img/logoM.PNG";
+import { Link } from "react-scroll";
 
 class App extends Component {
   constructor(props) {
@@ -46,7 +47,12 @@ class App extends Component {
         <div className="header">
           <div className="left"></div>
           <div className="right">
-            <div className="rightlink">ABOUT US</div>
+            <div className="rightlink">
+              {" "}
+              <Link className="headerlink" to="about" spy={false} smooth={true}>
+                About
+              </Link>
+            </div>
             <div className="rightlink">EVENTS</div>
             <div className="rightlink">BOARDS & COMMITTEES</div>
           </div>
@@ -77,35 +83,25 @@ class App extends Component {
         </div>
 
         <div className="mainlinks">
-          <h3>POPULAR SERVICES AND LINKS</h3>
+          <h3>FOOTER test</h3>
         </div>
         <div className="footer">
           <div className="leftfooter">
-            <h6>South Carolina</h6>
-            <h6>Revenue and Fiscal Affairs Office</h6>
-            <div
-              className="logodark"
-              style={{
-                backgroundImage: `url(${logomynt})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            ></div>
+            <h6>TESTING</h6>
+            <h6>More TESTING</h6>
           </div>
           <div className="middlefooter">
-            <h6>Privacy Statement</h6>
-            <h6>FOIA</h6>
-            <h6>Disclosures and Reporting</h6>
-            <h6>Report Fraud</h6>
-            <h6>Accessibility</h6>
-            <h6>Contact Us</h6>
+            <h6>middle Test</h6>
+            <h6>middle Test</h6>
+            <h6>middle Test</h6>
+            <h6>middle Test</h6>
+            <h6>middle Test</h6>
           </div>
           <div className="rightfooter">
-            <h6>MAIN OFFICE</h6>
-            <h6>GEODETIC SURVEY SECTION</h6>
-            <h6>Disclosures and Reporting</h6>
-            <h6>HEALTH AND DEMOGRAPHICS DIVISION</h6>
+            <h6>Right TESTING</h6>
+            <h6>Right TESTING</h6>
+            <h6>Right TESTING</h6>
+            <h6>Right TESTING</h6>
           </div>
         </div>
       </div>
