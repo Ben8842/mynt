@@ -65,18 +65,8 @@ class App extends Component {
             Providing independent research, analysis and resources to facilitate
             informed policy decisions and administration of services
           </h6>
+        </div>
 
-          <div>
-            <input id="searchfield" placeholder="Search rfa.sc.gov"></input>
-            <button id="search"></button>
-          </div>
-        </div>
-        <div className="primary">
-          <button className="boxbutton"></button>
-          <button className="boxbutton"></button>
-          <button className="boxbutton"></button>
-          <button className="boxbutton"></button>
-        </div>
         <div className="mainlinks">
           <h3>POPULAR SERVICES AND LINKS</h3>
         </div>
