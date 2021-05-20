@@ -115,7 +115,9 @@ class App extends Component {
           </div>
           <div className="right">
             <div className="rightlink">
-              <button onClick={() => this.togglemenu()}>menu</button>
+              <button className="menubutton" onClick={() => this.togglemenu()}>
+                menu
+              </button>
               <Link
                 className="headerlink"
                 to="welcome"
