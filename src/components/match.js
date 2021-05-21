@@ -18,52 +18,13 @@ class Matching extends Component {
     function shuffle(arry) {
       arry.sort(() => Math.random() - 0.5);
     }
-
-    var imgArr = [
-      require("../img/matching/matching0.PNG").default,
-      // require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
-      //  require("../img/matching/matching9.PNG").default,
-      //  require("../img/matching/matching10.PNG").default,
-      //  require("../img/matching/matching11.PNG").default,
-      //  require("../img/matching/matching12.PNG").default,
-      require("../img/matching/matching0.PNG").default,
-      //  require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
-      /*   require("../img/matching/matching9.PNG").default,
-            require("../img/matching/matching10.PNG").default,
-            require("../img/matching/matching11.PNG").default,
-            require("../img/matching/matching12.PNG").default,
-            require("../img/matching/matching0.PNG").default,
-            require("../img/matching/matching1.PNG").default,
-            require("../img/matching/matching2.PNG").default,
-            require("../img/matching/matching3.PNG").default,
-            require("../img/matching/matching4.PNG").default,
-            require("../img/matching/matching5.PNG").default,
-            require("../img/matching/matching6.PNG").default,
-            require("../img/matching/matching7.PNG").default,
-            require("../img/matching/matching8.PNG").default,
-            require("../img/matching/matching9.PNG").default,
-            require("../img/matching/matching10.PNG").default,
-            require("../img/matching/matching11.PNG").default,
-            require("../img/matching/matching12.PNG").default,*/
-    ];
-
-    shuffle(imgArr);
-
-    var sizing = this.props.sizeValue;
+    const content00 = (
+      <div>
+        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
+        cards are accepted and is equipped with EMV chip protection. Currently
+        accepting members into our Early Bird program
+      </div>
+    );
 
     const content01 = (
       <div>
@@ -75,6 +36,7 @@ class Matching extends Component {
 
     const content02 = (
       <div>
+        <div className="minibold">Anonymyzing your data</div>
         Paymynt anonymizes your data and works directly with your financial
         institution to verify cashback.
       </div>
@@ -98,36 +60,80 @@ class Matching extends Component {
 
     const content05 = (
       <div>
-        <div className="minibold">Anonymyzing your data</div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div className="minibold">Follow PAYMYNT on Twitter</div>
+        Follow us @<a href="https://twitter.com/paymyntgroup/">paymyntgroup</a>
       </div>
     );
 
     const content06 = (
       <div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div className="minibold">MICROSOFT</div>
+        MICROSOFT is one of our many brand partners. Learn more here @
+        <a href="https://paymynt.money/#brands">OUR BRAND PARTNERS</a>
       </div>
     );
 
     const content07 = (
       <div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div className="minibold">TARGET</div>
+        TARGET is one of our many brand partners. Learn more here @
+        <a href="https://paymynt.money/#brands"> OUR BRAND PARTNERS </a>
       </div>
     );
 
     const content08 = (
       <div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div className="minibold">No FEES on all rewards</div>
+        Since we’re built on the Stellar Blockchain, transactions are only a
+        fraction of a penny. Which means you keep MORE of your rewards.
       </div>
     );
+    var imgArr = [
+      [require("../img/matching/matching0.PNG").default, content00],
+      // require("../img/matching/matching1.PNG").default,
+      [require("../img/matching/matching2.PNG").default, content01],
+      [require("../img/matching/matching3.PNG").default, content02],
+      [require("../img/matching/matching4.PNG").default, content03],
+      [require("../img/matching/matching5.PNG").default, content04],
+      [require("../img/matching/matching6.PNG").default, content05],
+      [require("../img/matching/matching7.PNG").default, content06],
+      [require("../img/matching/matching8.PNG").default, content07],
+      //  require("../img/matching/matching9.PNG").default,
+      //  require("../img/matching/matching10.PNG").default,
+      //  require("../img/matching/matching11.PNG").default,
+      //  require("../img/matching/matching12.PNG").default,
+      [require("../img/matching/matching0.PNG").default, content00],
+      //  require("../img/matching/matching1.PNG").default,
+      [require("../img/matching/matching2.PNG").default, content01],
+      [require("../img/matching/matching3.PNG").default, content02],
+      [require("../img/matching/matching4.PNG").default, content03],
+      [require("../img/matching/matching5.PNG").default, content04],
+      [require("../img/matching/matching6.PNG").default, content05],
+      [require("../img/matching/matching7.PNG").default, content06],
+      [require("../img/matching/matching8.PNG").default, content07],
+      /*   require("../img/matching/matching9.PNG").default,
+            require("../img/matching/matching10.PNG").default,
+            require("../img/matching/matching11.PNG").default,
+            require("../img/matching/matching12.PNG").default,
+            require("../img/matching/matching0.PNG").default,
+            require("../img/matching/matching1.PNG").default,
+            require("../img/matching/matching2.PNG").default,
+            require("../img/matching/matching3.PNG").default,
+            require("../img/matching/matching4.PNG").default,
+            require("../img/matching/matching5.PNG").default,
+            require("../img/matching/matching6.PNG").default,
+            require("../img/matching/matching7.PNG").default,
+            require("../img/matching/matching8.PNG").default,
+            require("../img/matching/matching9.PNG").default,
+            require("../img/matching/matching10.PNG").default,
+            require("../img/matching/matching11.PNG").default,
+            require("../img/matching/matching12.PNG").default,*/
+    ];
+
+    shuffle(imgArr);
+    console.log(imgArr);
+
+    var sizing = this.props.sizeValue;
 
     var contentArray = [
       content01,
@@ -182,46 +188,116 @@ class Matching extends Component {
   }
 
   resethome() {
+    const content00 = (
+      <div>
+        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
+        cards are accepted and is equipped with EMV chip protection. Currently
+        accepting members into our Early Bird program
+      </div>
+    );
+
+    const content01 = (
+      <div>
+        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
+        cards are accepted and is equipped with EMV chip protection. Currently
+        accepting members into our Early Bird program
+      </div>
+    );
+
+    const content02 = (
+      <div>
+        <div className="minibold">Anonymyzing your data</div>
+        Paymynt anonymizes your data and works directly with your financial
+        institution to verify cashback.
+      </div>
+    );
+
+    const content03 = (
+      <div>
+        <div className="minibold">Bank-level Encryption</div> Paymynt uses
+        bank–level 256–bit encryption for end–to–end encrypted communication,
+        meaning your information is secure every step of the way.
+      </div>
+    );
+
+    const content04 = (
+      <div>
+        <div className="minibold">2-factor Authentication</div>
+        Paymynt takes your privacy and security a step further by utilizing
+        2–factor authentication when linking your cards.
+      </div>
+    );
+
+    const content05 = (
+      <div>
+        <div className="minibold">Follow PAYMYNT on Twitter</div>
+        Follow us @<a href="https://twitter.com/paymyntgroup/">paymyntgroup</a>
+      </div>
+    );
+
+    const content06 = (
+      <div>
+        <div className="minibold">MICROSOFT</div>
+        MICROSOFT is one of our many brand partners. Learn more here @
+        <a href="https://paymynt.money/#brands">OUR BRAND PARTNERS</a>
+      </div>
+    );
+
+    const content07 = (
+      <div>
+        <div className="minibold">TARGET</div>
+        TARGET is one of our many brand partners. Learn more here @
+        <a href="https://paymynt.money/#brands"> OUR BRAND PARTNERS </a>
+      </div>
+    );
+
+    const content08 = (
+      <div>
+        <div className="minibold">No FEES on all rewards</div>
+        Since we’re built on the Stellar Blockchain, transactions are only a
+        fraction of a penny. Which means you keep MORE of your rewards.
+      </div>
+    );
     var imgArr = [
-      require("../img/matching/matching0.PNG").default,
+      [require("../img/matching/matching0.PNG").default, content00],
       // require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
+      [require("../img/matching/matching2.PNG").default, content01],
+      [require("../img/matching/matching3.PNG").default, content02],
+      [require("../img/matching/matching4.PNG").default, content03],
+      [require("../img/matching/matching5.PNG").default, content04],
+      [require("../img/matching/matching6.PNG").default, content05],
+      [require("../img/matching/matching7.PNG").default, content06],
+      [require("../img/matching/matching8.PNG").default, content07],
       //  require("../img/matching/matching9.PNG").default,
       //  require("../img/matching/matching10.PNG").default,
       //  require("../img/matching/matching11.PNG").default,
       //  require("../img/matching/matching12.PNG").default,
-      require("../img/matching/matching0.PNG").default,
+      [require("../img/matching/matching0.PNG").default, content00],
       //  require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
+      [require("../img/matching/matching2.PNG").default, content01],
+      [require("../img/matching/matching3.PNG").default, content02],
+      [require("../img/matching/matching4.PNG").default, content03],
+      [require("../img/matching/matching5.PNG").default, content04],
+      [require("../img/matching/matching6.PNG").default, content05],
+      [require("../img/matching/matching7.PNG").default, content06],
+      [require("../img/matching/matching8.PNG").default, content07],
       /*   require("../img/matching/matching9.PNG").default,
-      require("../img/matching/matching10.PNG").default,
-      require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,
-      require("../img/matching/matching0.PNG").default,
-      require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
-      require("../img/matching/matching9.PNG").default,
-      require("../img/matching/matching10.PNG").default,
-      require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,*/
+            require("../img/matching/matching10.PNG").default,
+            require("../img/matching/matching11.PNG").default,
+            require("../img/matching/matching12.PNG").default,
+            require("../img/matching/matching0.PNG").default,
+            require("../img/matching/matching1.PNG").default,
+            require("../img/matching/matching2.PNG").default,
+            require("../img/matching/matching3.PNG").default,
+            require("../img/matching/matching4.PNG").default,
+            require("../img/matching/matching5.PNG").default,
+            require("../img/matching/matching6.PNG").default,
+            require("../img/matching/matching7.PNG").default,
+            require("../img/matching/matching8.PNG").default,
+            require("../img/matching/matching9.PNG").default,
+            require("../img/matching/matching10.PNG").default,
+            require("../img/matching/matching11.PNG").default,
+            require("../img/matching/matching12.PNG").default,*/
     ];
     function shuffle(arry) {
       arry.sort(() => Math.random() - 0.5);
@@ -295,15 +371,15 @@ class Matching extends Component {
             score: this.state.score - 1,
             isMatch: false,
             doubleClick: false,
-            content: carray[superIndex % 8],
-            contentImg: imgArrS[superIndex],
+            content: imgArrS[superIndex][1],
+            contentImg: imgArrS[superIndex][0],
           };
         }
         if (puzStep === 1) {
           console.log(puzStep);
           if (
-            imgArrS[superIndex] ===
-            imgArrS[
+            imgArrS[superIndex][0] ===
+            imgArrS[0][
               choicesY[choicesY.length - 1] * this.props.sizeValue +
                 choicesX[choicesX.length - 1]
             ]
@@ -321,8 +397,8 @@ class Matching extends Component {
               isMatch: true,
               doubleClick: false,
               numOfMatch: this.state.numOfMatch + 1,
-              content: carray[superIndex % 8],
-              contentImg: imgArrS[superIndex],
+              content: imgArrS[superIndex][1],
+              contentImg: imgArrS[superIndex][0],
             };
           } else {
             console.log("NO MATCH!");
@@ -338,16 +414,16 @@ class Matching extends Component {
               choicesY: holderY,
               score: this.state.score - 1,
               doubleClick: false,
-              content: carray[superIndex % 8],
-              contentImg: imgArrS[superIndex],
+              content: imgArrS[superIndex][1],
+              contentImg: imgArrS[superIndex][0],
             };
           }
         }
       });
       if (
         puzStep === 1 &&
-        imgArrS[superIndex] !==
-          imgArrS[
+        imgArrS[superIndex][0] !==
+          imgArrS[0][
             choicesY[choicesY.length - 1] * this.props.sizeValue +
               choicesX[choicesX.length - 1]
           ]
@@ -397,7 +473,7 @@ class Matching extends Component {
           id="squareHidden"
           onClick={() => this.clickTime(x, y, superIndex, level)}
         >
-          <img src={imgArrS[superIndex]} alt="mystery"></img>
+          <img src={imgArrS[superIndex][0]} alt="mystery"></img>
         </button>
       );
     }
@@ -466,7 +542,10 @@ class Matching extends Component {
       <div id="instruction">
         PAYMYNT Challenge
         <div id="score">
-          SCORE = {score}
+          SCORE = {score} &nbsp; &nbsp; &nbsp;{" "}
+          <button type="button" class="button" onClick={() => this.resethome()}>
+            RESET
+          </button>
           {isMatch ? matchCelebrate : placeholder}
         </div>
       </div>
@@ -476,7 +555,11 @@ class Matching extends Component {
       <div id="instructionRed">
         Oops! try a different one!
         <div id="score">
-          SCORE = {score} {isMatch ? matchCelebrate : placeholder}
+          SCORE = {score} &nbsp; &nbsp; &nbsp;{" "}
+          <button type="button" class="button" onClick={() => this.resethome()}>
+            RESET
+          </button>{" "}
+          {isMatch ? matchCelebrate : placeholder}
         </div>
       </div>
     );
@@ -504,17 +587,9 @@ class Matching extends Component {
         {numOfMatch === 8 ? instructionsWin : null}
 
         <div id="entireThing">
-          {contentImg !== undefined ? displayCurrent : null}
           <div id="info">{gridDisplay}</div>
-          <div>
-            <button
-              type="button"
-              class="button"
-              onClick={() => this.resethome()}
-            >
-              RESET
-            </button>
-          </div>
+          {contentImg !== undefined ? displayCurrent : null}
+          <div></div>
         </div>
       </div>
     );
