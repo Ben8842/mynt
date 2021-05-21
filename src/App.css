@@ -50,6 +50,20 @@ img {
   width: 70px;
 }
 
+#squareHiddenB {
+  background-color: white;
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  padding: 0px;
+  margin: 2px;
+  text-align: center;
+  width: 100px;
+}
+
 #squareHidden:focus {
   outline: none;
   background-color: white;
@@ -281,6 +295,13 @@ ul {
   }
   .icondetails {
     color: black;
+    min-height: 10em;
+    color: #0275b6;
+    margin: 18px;
+    padding: 5px;
+  }
+  .minibold {
+    font-weight: bold;
   }
   .wrappertogame {
     background-color: white;

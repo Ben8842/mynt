@@ -82,15 +82,15 @@ class Matching extends Component {
 
     const content03 = (
       <div>
-        <div>Bank-level Encryption</div> Paymynt uses bank–level 256–bit
-        encryption for end–to–end encrypted communication, meaning your
-        information is secure every step of the way.
+        <div className="minibold">Bank-level Encryption</div> Paymynt uses
+        bank–level 256–bit encryption for end–to–end encrypted communication,
+        meaning your information is secure every step of the way.
       </div>
     );
 
     const content04 = (
       <div>
-        <div>2-factor Authentication</div>
+        <div className="minibold">2-factor Authentication</div>
         Paymynt takes your privacy and security a step further by utilizing
         2–factor authentication when linking your cards.
       </div>
@@ -98,7 +98,7 @@ class Matching extends Component {
 
     const content05 = (
       <div>
-        <div>Anonymyzing your data</div>
+        <div className="minibold">Anonymyzing your data</div>
         Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
         cards are accepted and is equipped with EMV chip protection. Currently
         accepting members into our Early Bird program
@@ -253,6 +253,7 @@ class Matching extends Component {
         numOfMatch: 0,
         indexChoice: 0,
         content: null,
+        contentImg: imageback,
       };
     });
   }
@@ -295,6 +296,7 @@ class Matching extends Component {
             isMatch: false,
             doubleClick: false,
             content: carray[superIndex % 8],
+            contentImg: imgArrS[superIndex],
           };
         }
         if (puzStep === 1) {
@@ -320,6 +322,7 @@ class Matching extends Component {
               doubleClick: false,
               numOfMatch: this.state.numOfMatch + 1,
               content: carray[superIndex % 8],
+              contentImg: imgArrS[superIndex],
             };
           } else {
             console.log("NO MATCH!");
@@ -336,6 +339,7 @@ class Matching extends Component {
               score: this.state.score - 1,
               doubleClick: false,
               content: carray[superIndex % 8],
+              contentImg: imgArrS[superIndex],
             };
           }
         }
@@ -410,6 +414,8 @@ class Matching extends Component {
       carray,
       superIndex,
       content,
+      imgArrS,
+      contentImg,
     } = this.state;
     console.log(foundH);
     const boardA = this.props.sizeValue;
@@ -481,14 +487,24 @@ class Matching extends Component {
         <div id="score">Your final score was {score}. Amazing! </div>
       </div>
     );
-    console.log(carray[superIndex]);
+    // console.log(carray[superIndex]);
+
+    const displayCurrent = (
+      <div className="icondetails">
+        <button id="squareHiddenB">
+          <img src={contentImg} alt="mystery"></img>
+        </button>
+        {content}
+      </div>
+    );
 
     return (
       <div>
         {doubleClick && numOfMatch !== 18 ? instructionsDouble : instructions}
-        {numOfMatch === 18 ? instructionsWin : null}
+        {numOfMatch === 8 ? instructionsWin : null}
 
         <div id="entireThing">
+          {contentImg !== undefined ? displayCurrent : null}
           <div id="info">{gridDisplay}</div>
           <div>
             <button
@@ -499,7 +515,6 @@ class Matching extends Component {
               RESET
             </button>
           </div>
-          <div className="icondetails">{content}</div>
         </div>
       </div>
     );
