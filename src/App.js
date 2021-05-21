@@ -90,7 +90,7 @@ class App extends Component {
     );
 
     const whatWeDo = (
-      <div>
+      <div className="wrappertogame">
         PAYMYNT provides consumers with a better way to Shop, Earn, Spend and
         Invest.
         <Matching />
@@ -134,7 +134,7 @@ class App extends Component {
     );
 
     const game = (
-      <div>
+      <div className="wrappertogame">
         <Matching />
         Mynt
       </div>
