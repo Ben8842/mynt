@@ -89,7 +89,7 @@ class Matching extends Component {
   resethome() {
     var imgArr = [
       require("../img/matching/matching0.PNG").default,
-      require("../img/matching/matching1.PNG").default,
+      // require("../img/matching/matching1.PNG").default,
       require("../img/matching/matching2.PNG").default,
       require("../img/matching/matching3.PNG").default,
       require("../img/matching/matching4.PNG").default,
@@ -97,7 +97,20 @@ class Matching extends Component {
       require("../img/matching/matching6.PNG").default,
       require("../img/matching/matching7.PNG").default,
       require("../img/matching/matching8.PNG").default,
-      require("../img/matching/matching9.PNG").default,
+      //  require("../img/matching/matching9.PNG").default,
+      //  require("../img/matching/matching10.PNG").default,
+      //  require("../img/matching/matching11.PNG").default,
+      //  require("../img/matching/matching12.PNG").default,
+      require("../img/matching/matching0.PNG").default,
+      //  require("../img/matching/matching1.PNG").default,
+      require("../img/matching/matching2.PNG").default,
+      require("../img/matching/matching3.PNG").default,
+      require("../img/matching/matching4.PNG").default,
+      require("../img/matching/matching5.PNG").default,
+      require("../img/matching/matching6.PNG").default,
+      require("../img/matching/matching7.PNG").default,
+      require("../img/matching/matching8.PNG").default,
+      /*   require("../img/matching/matching9.PNG").default,
       require("../img/matching/matching10.PNG").default,
       require("../img/matching/matching11.PNG").default,
       require("../img/matching/matching12.PNG").default,
@@ -113,20 +126,7 @@ class Matching extends Component {
       require("../img/matching/matching9.PNG").default,
       require("../img/matching/matching10.PNG").default,
       require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,
-      require("../img/matching/matching0.PNG").default,
-      require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
-      require("../img/matching/matching9.PNG").default,
-      require("../img/matching/matching10.PNG").default,
-      require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,
+      require("../img/matching/matching12.PNG").default,*/
     ];
     function shuffle(arry) {
       arry.sort(() => Math.random() - 0.5);
@@ -171,7 +171,7 @@ class Matching extends Component {
       score,
       isMatch,
     } = this.state;
-    if (level == 1) {
+    if (level === 1) {
       console.log("whoa you clicked this already!");
       this.setState((state) => {
         return {
@@ -183,7 +183,7 @@ class Matching extends Component {
     } else {
       this.setState((state) => {
         console.log(puzStep);
-        if (puzStep == 0) {
+        if (puzStep === 0) {
           console.log("PICK ONE MORE AND TRY TO MATCH!");
           const holderX = [...state.choicesX, x];
           const holderY = [...state.choicesY, y];
@@ -198,12 +198,13 @@ class Matching extends Component {
             doubleClick: false,
           };
         }
-        if (puzStep == 1) {
+        if (puzStep === 1) {
           console.log(puzStep);
           if (
-            imgArrS[superIndex] ==
+            imgArrS[superIndex] ===
             imgArrS[
-              choicesY[choicesY.length - 1] * 6 + choicesX[choicesX.length - 1]
+              choicesY[choicesY.length - 1] * this.props.sizeValue +
+                choicesX[choicesX.length - 1]
             ]
           ) {
             console.log("MATCH!");
@@ -239,10 +240,11 @@ class Matching extends Component {
         }
       });
       if (
-        puzStep == 1 &&
+        puzStep === 1 &&
         imgArrS[superIndex] !==
           imgArrS[
-            choicesY[choicesY.length - 1] * 6 + choicesX[choicesX.length - 1]
+            choicesY[choicesY.length - 1] * this.props.sizeValue +
+              choicesX[choicesX.length - 1]
           ]
       ) {
         setTimeout(() => this.noMatch(), 250);
@@ -269,12 +271,12 @@ class Matching extends Component {
     var superIndex = y * sizes + x;
     var z;
     for (z = 0; z < choicesX.length; z++) {
-      if (choicesX[z] == x && choicesY[z] == y) {
+      if (choicesX[z] === x && choicesY[z] === y) {
         level = 1;
       }
     }
 
-    if (level == 0) {
+    if (level === 0) {
       var findex = (x * sizes + y) % 6;
       return (
         <button
@@ -284,7 +286,7 @@ class Matching extends Component {
           <img src={imageback} alt="mystery"></img>
         </button>
       );
-    } else if (level == 1) {
+    } else if (level === 1) {
       return (
         <button
           id="squareHidden"
@@ -345,7 +347,7 @@ class Matching extends Component {
 
     const instructions = (
       <div id="instruction">
-        Click below to find and match the emojis!
+        Mynt Match!
         <div id="score">
           SCORE = {score}
           {isMatch ? matchCelebrate : placeholder}
@@ -372,7 +374,7 @@ class Matching extends Component {
     return (
       <div>
         {doubleClick && numOfMatch !== 18 ? instructionsDouble : instructions}
-        {numOfMatch == 18 ? instructionsWin : null}
+        {numOfMatch === 18 ? instructionsWin : null}
 
         <div id="entireThing">
           <div id="info">{gridDisplay}</div>
@@ -385,6 +387,7 @@ class Matching extends Component {
               Generate a New Puzzle
             </button>
           </div>
+          <div>Learn More Window!</div>
         </div>
       </div>
     );
