@@ -464,7 +464,7 @@ class Matching extends Component {
 
     const instructions = (
       <div id="instruction">
-        Mynt Match!
+        PAYMYNT Challenge
         <div id="score">
           SCORE = {score}
           {isMatch ? matchCelebrate : placeholder}

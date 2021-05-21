@@ -85,7 +85,7 @@ class App extends Component {
       });
     } else if (id === 6) {
       this.setState({
-        menu: true,
+        menu: false,
         who: false,
         what: false,
         why: false,
@@ -109,7 +109,6 @@ class App extends Component {
       <div className="wrappertogame">
         PAYMYNT provides consumers with a better way to Shop, Earn, Spend and
         Invest.
-        <Matching />
       </div>
     );
 
@@ -152,7 +151,6 @@ class App extends Component {
     const gameM = (
       <div className="wrappertogame">
         <Matching sizeValue="4" />
-        testing
       </div>
     );
 
@@ -188,63 +186,63 @@ class App extends Component {
         {why ? whyWeDo : null}
         {how ? howWeDo : null}
         {motto ? mottoM : null}
-        {game ? gameM : null}
       </div>
     );
 
-    return (
-      <div className="App">
-        <div className="header">
-          <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
+    const paybutton = (
+      <button
+        className="challenge"
+        id="6"
+        onClick={() => this.toggleContent(6)}
+      >
+        PAYMYNT Challenge
+      </button>
+    );
 
-          <div className="left">
-            <div
-              id="logomynt"
-              className="searchbanner"
-              style={{
-                backgroundImage: `url(${logomynt})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            ></div>
+    const headerchange = (
+      <div className="header">
+        <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
+        {game ? gameM : null}
+        {game ? null : paybutton}
+
+        <div className="left">
+          <div
+            id="logomynt"
+            className="searchbanner"
+            style={{
+              backgroundImage: `url(${logomynt})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          ></div>
+        </div>
+        <div className="right">
+          <div className="rightlink">
+            <button className="menubutton" onClick={() => this.togglemenu()}>
+              menu
+            </button>
+            <Link className="headerlink" to="welcome" spy={false} smooth={true}>
+              Welcome
+            </Link>
           </div>
-          <div className="right">
-            <div className="rightlink">
-              <button className="menubutton" onClick={() => this.togglemenu()}>
-                menu
-              </button>
-              <Link
-                className="headerlink"
-                to="welcome"
-                spy={false}
-                smooth={true}
-              >
-                Welcome
-              </Link>
-            </div>
-            <div className="rightlink">
-              <Link
-                className="headerlink"
-                to="product"
-                spy={false}
-                smooth={true}
-              >
-                Product
-              </Link>
-            </div>
-            <div className="rightlink">
-              <Link
-                className="headerlink"
-                to="footer"
-                spy={false}
-                smooth={true}
-              >
-                footer
-              </Link>
-            </div>
+          <div className="rightlink">
+            <Link className="headerlink" to="product" spy={false} smooth={true}>
+              Product
+            </Link>
+          </div>
+          <div className="rightlink">
+            <Link className="headerlink" to="footer" spy={false} smooth={true}>
+              More
+            </Link>
           </div>
         </div>
+      </div>
+    );
+    return (
+      <div className="App">
+        {game ? gameM : null}
+        {game ? null : headerchange}
         {this.state.menu ? menuextended : null}
 
         <div

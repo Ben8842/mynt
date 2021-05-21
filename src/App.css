@@ -43,11 +43,11 @@ img {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 70px;
+  height: 55px;
   padding: 0px;
   margin: 2px;
   text-align: center;
-  width: 70px;
+  width: 55px;
 }
 
 #squareHiddenB {
@@ -72,11 +72,11 @@ img {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 70px;
+  height: 55px;
   padding: 0px;
-  margin: 5px;
+  margin: 2px;
   text-align: center;
-  width: 70px;
+  width: 55px;
 }
 
 #logomynt {
@@ -281,9 +281,24 @@ ul {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 701px) {
   .App {
     text-align: center;
+  }
+
+  .challenge {
+    border-radius: 40px;
+    font-size: 16px;
+    height: 3em;
+    border: solid;
+    border-width: 5px;
+    border-color: #5f8ba5;
+    font: #0275b6;
+    background-color: white;
+    font-weight: bold;
+  }
+  .row {
+    display: flex;
   }
 
   h6 {
@@ -295,7 +310,7 @@ ul {
   }
   .icondetails {
     color: black;
-    min-height: 10em;
+    min-height: 12em;
     color: #0275b6;
     margin: 18px;
     padding: 5px;
@@ -308,7 +323,6 @@ ul {
     height: 100%;
     width: 100%;
     position: fixed;
-    top: 100px;
   }
 
   #instruction {
@@ -320,14 +334,14 @@ ul {
 
   #instructionRed {
     color: red;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 18px;
   }
 
   #instructionGreen {
     color: green;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 18px;
   }
@@ -341,7 +355,7 @@ ul {
 
   #score {
     color: black;
-    font-size: 40px;
+    font-size: 18px;
     font-weight: bold;
     text-align: left;
     margin-left: 100px;
@@ -352,7 +366,9 @@ ul {
     color: white;
     position: fixed;
     width: 100%;
-    height: 180px;
+    height: auto;
+    min-height: 2em;
+    max-height: 200px;
   }
 
   .searching {
