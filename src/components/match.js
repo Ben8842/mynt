@@ -21,7 +21,7 @@ class Matching extends Component {
 
     var imgArr = [
       require("../img/matching/matching0.PNG").default,
-      require("../img/matching/matching1.PNG").default,
+      // require("../img/matching/matching1.PNG").default,
       require("../img/matching/matching2.PNG").default,
       require("../img/matching/matching3.PNG").default,
       require("../img/matching/matching4.PNG").default,
@@ -29,7 +29,20 @@ class Matching extends Component {
       require("../img/matching/matching6.PNG").default,
       require("../img/matching/matching7.PNG").default,
       require("../img/matching/matching8.PNG").default,
-      require("../img/matching/matching9.PNG").default,
+      //  require("../img/matching/matching9.PNG").default,
+      //  require("../img/matching/matching10.PNG").default,
+      //  require("../img/matching/matching11.PNG").default,
+      //  require("../img/matching/matching12.PNG").default,
+      require("../img/matching/matching0.PNG").default,
+      //  require("../img/matching/matching1.PNG").default,
+      require("../img/matching/matching2.PNG").default,
+      require("../img/matching/matching3.PNG").default,
+      require("../img/matching/matching4.PNG").default,
+      require("../img/matching/matching5.PNG").default,
+      require("../img/matching/matching6.PNG").default,
+      require("../img/matching/matching7.PNG").default,
+      require("../img/matching/matching8.PNG").default,
+      /*   require("../img/matching/matching9.PNG").default,
       require("../img/matching/matching10.PNG").default,
       require("../img/matching/matching11.PNG").default,
       require("../img/matching/matching12.PNG").default,
@@ -45,20 +58,7 @@ class Matching extends Component {
       require("../img/matching/matching9.PNG").default,
       require("../img/matching/matching10.PNG").default,
       require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,
-      require("../img/matching/matching0.PNG").default,
-      require("../img/matching/matching1.PNG").default,
-      require("../img/matching/matching2.PNG").default,
-      require("../img/matching/matching3.PNG").default,
-      require("../img/matching/matching4.PNG").default,
-      require("../img/matching/matching5.PNG").default,
-      require("../img/matching/matching6.PNG").default,
-      require("../img/matching/matching7.PNG").default,
-      require("../img/matching/matching8.PNG").default,
-      require("../img/matching/matching9.PNG").default,
-      require("../img/matching/matching10.PNG").default,
-      require("../img/matching/matching11.PNG").default,
-      require("../img/matching/matching12.PNG").default,
+      require("../img/matching/matching12.PNG").default,*/
     ];
 
     shuffle(imgArr);
@@ -339,7 +339,7 @@ class Matching extends Component {
 
     const placeholder = (
       <div id="instructionPlace">
-        <div>only a place holder</div>
+        <div>&nbsp;</div>
       </div>
     );
 

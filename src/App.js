@@ -16,6 +16,7 @@ class App extends Component {
       why: false,
       how: false,
       motto: false,
+      game: false,
     };
   }
 
@@ -40,6 +41,7 @@ class App extends Component {
         why: false,
         how: false,
         motto: false,
+        game: false,
       });
     } else if (id === 2) {
       this.setState({
@@ -49,6 +51,7 @@ class App extends Component {
         why: false,
         how: false,
         motto: false,
+        game: false,
       });
     } else if (id === 3) {
       this.setState({
@@ -58,6 +61,7 @@ class App extends Component {
         why: true,
         how: false,
         motto: false,
+        game: false,
       });
     } else if (id === 4) {
       this.setState({
@@ -67,6 +71,7 @@ class App extends Component {
         why: false,
         how: true,
         motto: false,
+        game: false,
       });
     } else if (id === 5) {
       this.setState({
@@ -76,12 +81,23 @@ class App extends Component {
         why: false,
         how: false,
         motto: true,
+        game: false,
+      });
+    } else if (id === 6) {
+      this.setState({
+        menu: true,
+        who: false,
+        what: false,
+        why: false,
+        how: false,
+        motto: false,
+        game: true,
       });
     }
   }
 
   render() {
-    var { menu, who, what, why, how, motto } = this.state;
+    var { menu, who, what, why, how, motto, game } = this.state;
     const whoWeAre = (
       <div>
         PAYMYNT is a movile commerce and fintech company based in greater
@@ -133,10 +149,10 @@ class App extends Component {
       </div>
     );
 
-    const game = (
+    const gameM = (
       <div className="wrappertogame">
-        <Matching />
-        Mynt
+        <Matching sizeValue="4" />
+        testing
       </div>
     );
 
@@ -163,12 +179,16 @@ class App extends Component {
           <button id="6" onClick={() => this.toggleContent(5)}>
             Our Motto
           </button>
+          <button id="6" onClick={() => this.toggleContent(6)}>
+            MYNT GAME
+          </button>
         </div>
         {who ? whoWeAre : null}
         {what ? whatWeDo : null}
         {why ? whyWeDo : null}
         {how ? howWeDo : null}
         {motto ? mottoM : null}
+        {game ? gameM : null}
       </div>
     );
 
