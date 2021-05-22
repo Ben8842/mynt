@@ -200,41 +200,62 @@ class App extends Component {
     );
 
     const headerchange = (
-      <div className="header">
-        <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
-        {game ? gameM : null}
-        {game ? null : paybutton}
-
-        <div className="left">
-          <div
-            id="logomynt"
-            className="searchbanner"
-            style={{
-              backgroundImage: `url(${logomynt})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          ></div>
+      <div>
+        <div className="overhead">
+          <button>home</button>
+          <button>PaymyntMatch</button>
         </div>
-        <div className="right">
-          <div className="rightlink">
-            <button className="menubutton" onClick={() => this.togglemenu()}>
-              menu
-            </button>
-            <Link className="headerlink" to="welcome" spy={false} smooth={true}>
-              Welcome
-            </Link>
+        <div className="header">
+          <div className="centerthetop">Invest the Cash, Spend the Crypto</div>
+          {game ? gameM : null}
+          {game ? null : paybutton}
+
+          <div className="left">
+            <div
+              id="logomynt"
+              className="searchbanner"
+              style={{
+                backgroundImage: `url(${logomynt})`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            ></div>
           </div>
-          <div className="rightlink">
-            <Link className="headerlink" to="product" spy={false} smooth={true}>
-              Product
-            </Link>
-          </div>
-          <div className="rightlink">
-            <Link className="headerlink" to="footer" spy={false} smooth={true}>
-              More
-            </Link>
+          <div className="right">
+            <div className="rightlink">
+              <button className="menubutton" onClick={() => this.togglemenu()}>
+                menu
+              </button>
+              <Link
+                className="headerlink"
+                to="welcome"
+                spy={false}
+                smooth={true}
+              >
+                Welcome
+              </Link>
+            </div>
+            <div className="rightlink">
+              <Link
+                className="headerlink"
+                to="product"
+                spy={false}
+                smooth={true}
+              >
+                Product
+              </Link>
+            </div>
+            <div className="rightlink">
+              <Link
+                className="headerlink"
+                to="footer"
+                spy={false}
+                smooth={true}
+              >
+                More
+              </Link>
+            </div>
           </div>
         </div>
       </div>
