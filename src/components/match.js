@@ -21,16 +21,13 @@ class Matching extends Component {
     const content00 = (
       <div>
         Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        cards are accepted and is equipped with EMV chip protection.
       </div>
     );
 
     const content01 = (
       <div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div>PAYMYNT</div>
       </div>
     );
 
@@ -45,8 +42,8 @@ class Matching extends Component {
     const content03 = (
       <div>
         <div className="minibold">Bank-level Encryption</div> Paymynt uses
-        bank–level 256–bit encryption for end–to–end encrypted communication,
-        meaning your information is secure every step of the way.
+        bank–level 256–bit encryption meaning your information is secure every
+        step of the way.
       </div>
     );
 
@@ -91,26 +88,26 @@ class Matching extends Component {
     var imgArr = [
       [require("../img/matching/matching0.PNG").default, content00],
       // require("../img/matching/matching1.PNG").default,
-      [require("../img/matching/matching2.PNG").default, content01],
-      [require("../img/matching/matching3.PNG").default, content02],
-      [require("../img/matching/matching4.PNG").default, content03],
-      [require("../img/matching/matching5.PNG").default, content04],
-      [require("../img/matching/matching6.PNG").default, content05],
-      [require("../img/matching/matching7.PNG").default, content06],
-      [require("../img/matching/matching8.PNG").default, content07],
+      [require("../img/matching/matching2.PNG").default, content02],
+      [require("../img/matching/matching3.PNG").default, content03],
+      [require("../img/matching/matching4.PNG").default, content04],
+      [require("../img/matching/matching5.PNG").default, content05],
+      [require("../img/matching/matching6.PNG").default, content06],
+      [require("../img/matching/matching7.PNG").default, content07],
+      [require("../img/matching/matching8.PNG").default, content08],
       //  require("../img/matching/matching9.PNG").default,
       //  require("../img/matching/matching10.PNG").default,
       //  require("../img/matching/matching11.PNG").default,
       //  require("../img/matching/matching12.PNG").default,
       [require("../img/matching/matching0.PNG").default, content00],
       //  require("../img/matching/matching1.PNG").default,
-      [require("../img/matching/matching2.PNG").default, content01],
-      [require("../img/matching/matching3.PNG").default, content02],
-      [require("../img/matching/matching4.PNG").default, content03],
-      [require("../img/matching/matching5.PNG").default, content04],
-      [require("../img/matching/matching6.PNG").default, content05],
-      [require("../img/matching/matching7.PNG").default, content06],
-      [require("../img/matching/matching8.PNG").default, content07],
+      [require("../img/matching/matching2.PNG").default, content02],
+      [require("../img/matching/matching3.PNG").default, content03],
+      [require("../img/matching/matching4.PNG").default, content04],
+      [require("../img/matching/matching5.PNG").default, content05],
+      [require("../img/matching/matching6.PNG").default, content06],
+      [require("../img/matching/matching7.PNG").default, content07],
+      [require("../img/matching/matching8.PNG").default, content08],
       /*   require("../img/matching/matching9.PNG").default,
             require("../img/matching/matching10.PNG").default,
             require("../img/matching/matching11.PNG").default,
@@ -191,16 +188,13 @@ class Matching extends Component {
     const content00 = (
       <div>
         Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        cards are accepted and is equipped with EMV chip protection.
       </div>
     );
 
     const content01 = (
       <div>
-        Paymynt Visa® Card Your Paymynt Visa® Card can be used everywhere Visa®
-        cards are accepted and is equipped with EMV chip protection. Currently
-        accepting members into our Early Bird program
+        <div>PAYMYNT</div>
       </div>
     );
 
@@ -215,8 +209,8 @@ class Matching extends Component {
     const content03 = (
       <div>
         <div className="minibold">Bank-level Encryption</div> Paymynt uses
-        bank–level 256–bit encryption for end–to–end encrypted communication,
-        meaning your information is secure every step of the way.
+        bank–level 256–bit encryption meaning your information is secure every
+        step of the way.
       </div>
     );
 
@@ -261,26 +255,26 @@ class Matching extends Component {
     var imgArr = [
       [require("../img/matching/matching0.PNG").default, content00],
       // require("../img/matching/matching1.PNG").default,
-      [require("../img/matching/matching2.PNG").default, content01],
-      [require("../img/matching/matching3.PNG").default, content02],
-      [require("../img/matching/matching4.PNG").default, content03],
-      [require("../img/matching/matching5.PNG").default, content04],
-      [require("../img/matching/matching6.PNG").default, content05],
-      [require("../img/matching/matching7.PNG").default, content06],
-      [require("../img/matching/matching8.PNG").default, content07],
+      [require("../img/matching/matching2.PNG").default, content02],
+      [require("../img/matching/matching3.PNG").default, content03],
+      [require("../img/matching/matching4.PNG").default, content04],
+      [require("../img/matching/matching5.PNG").default, content05],
+      [require("../img/matching/matching6.PNG").default, content06],
+      [require("../img/matching/matching7.PNG").default, content07],
+      [require("../img/matching/matching8.PNG").default, content08],
       //  require("../img/matching/matching9.PNG").default,
       //  require("../img/matching/matching10.PNG").default,
       //  require("../img/matching/matching11.PNG").default,
       //  require("../img/matching/matching12.PNG").default,
       [require("../img/matching/matching0.PNG").default, content00],
       //  require("../img/matching/matching1.PNG").default,
-      [require("../img/matching/matching2.PNG").default, content01],
-      [require("../img/matching/matching3.PNG").default, content02],
-      [require("../img/matching/matching4.PNG").default, content03],
-      [require("../img/matching/matching5.PNG").default, content04],
-      [require("../img/matching/matching6.PNG").default, content05],
-      [require("../img/matching/matching7.PNG").default, content06],
-      [require("../img/matching/matching8.PNG").default, content07],
+      [require("../img/matching/matching2.PNG").default, content02],
+      [require("../img/matching/matching3.PNG").default, content03],
+      [require("../img/matching/matching4.PNG").default, content04],
+      [require("../img/matching/matching5.PNG").default, content05],
+      [require("../img/matching/matching6.PNG").default, content06],
+      [require("../img/matching/matching7.PNG").default, content07],
+      [require("../img/matching/matching8.PNG").default, content08],
       /*   require("../img/matching/matching9.PNG").default,
             require("../img/matching/matching10.PNG").default,
             require("../img/matching/matching11.PNG").default,
@@ -379,10 +373,10 @@ class Matching extends Component {
           console.log(puzStep);
           if (
             imgArrS[superIndex][0] ===
-            imgArrS[0][
+            imgArrS[
               choicesY[choicesY.length - 1] * this.props.sizeValue +
                 choicesX[choicesX.length - 1]
-            ]
+            ][0]
           ) {
             console.log("MATCH!");
             const holderX = [...state.choicesX, x];
@@ -423,10 +417,10 @@ class Matching extends Component {
       if (
         puzStep === 1 &&
         imgArrS[superIndex][0] !==
-          imgArrS[0][
+          imgArrS[
             choicesY[choicesY.length - 1] * this.props.sizeValue +
               choicesX[choicesX.length - 1]
-          ]
+          ][0]
       ) {
         setTimeout(() => this.noMatch(), 250);
       }
@@ -444,6 +438,7 @@ class Matching extends Component {
   }
 
   renderSquare(x, y) {
+    console.log(level);
     var { choicesX, choicesY, sizes, imgArrS } = this.state;
     var run = x;
     var rise = y;
@@ -566,8 +561,8 @@ class Matching extends Component {
 
     const instructionsWin = (
       <div id="instruction">
-        You matched all of the emojiis. Amazing!
-        <div id="score">Your final score was {score}. Amazing! </div>
+        You matched all of the icons. Great!
+        <div id="score">Your final score was {score}. </div>
       </div>
     );
     // console.log(carray[superIndex]);
@@ -581,15 +576,20 @@ class Matching extends Component {
       </div>
     );
 
+    const instructionTest = (
+      <div>
+        <div className="holdspace">Match the icons below and score points</div>
+      </div>
+    );
+
     return (
       <div>
-        {doubleClick && numOfMatch !== 18 ? instructionsDouble : instructions}
+        {doubleClick && numOfMatch !== 8 ? instructionsDouble : instructions}
         {numOfMatch === 8 ? instructionsWin : null}
 
         <div id="entireThing">
+          {contentImg !== undefined ? displayCurrent : instructionTest}
           <div id="info">{gridDisplay}</div>
-          {contentImg !== undefined ? displayCurrent : null}
-          <div></div>
         </div>
       </div>
     );

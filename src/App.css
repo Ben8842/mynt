@@ -297,9 +297,6 @@ ul {
     background-color: white;
     font-weight: bold;
   }
-  .row {
-    display: flex;
-  }
 
   h6 {
     color: white;
@@ -314,6 +311,10 @@ ul {
     color: #0275b6;
     margin: 18px;
     padding: 5px;
+  }
+
+  .holdspace {
+    min-height: 10em;
   }
   .minibold {
     font-weight: bold;
@@ -369,6 +370,7 @@ ul {
     height: auto;
     min-height: 2em;
     max-height: 200px;
+    text-align: center;
   }
 
   .searching {
