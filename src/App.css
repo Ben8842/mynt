@@ -35,6 +35,7 @@ img {
   margin: 0px;
   text-align: center;
   border: none;
+  height: 2000px;
 }
 #squareHidden {
   background-color: white;

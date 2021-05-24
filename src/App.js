@@ -16,7 +16,7 @@ class App extends Component {
       why: false,
       how: false,
       motto: false,
-      game: false,
+      game: true,
     };
   }
 
