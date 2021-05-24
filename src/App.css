@@ -44,11 +44,11 @@ img {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 55px;
+  height: 40px;
   padding: 0px;
   margin: 2px;
   text-align: center;
-  width: 55px;
+  width: 40px;
 }
 
 #squareHiddenB {
@@ -58,11 +58,11 @@ img {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 100px;
+  height: 75px;
   padding: 0px;
   margin: 2px;
   text-align: center;
-  width: 100px;
+  width: 75px;
 }
 
 #squareHidden:focus {
@@ -73,11 +73,11 @@ img {
   font-size: 24px;
   font-weight: bold;
   line-height: 34px;
-  height: 55px;
+  height: 40px;
   padding: 0px;
   margin: 2px;
   text-align: center;
-  width: 55px;
+  width: 40px;
 }
 
 #logomynt {
@@ -315,7 +315,7 @@ ul {
   }
 
   .holdspace {
-    min-height: 10em;
+    min-height: 9em;
   }
   .minibold {
     font-weight: bold;
